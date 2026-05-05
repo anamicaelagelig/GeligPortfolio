@@ -1,0 +1,95 @@
+/* Elegant Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f1fb; /* very light lavender */
+    font-family: 'Poppins', sans-serif;
+    color: #4b3f5c;
+}
+
+/* Header Section */
+.header {
+    width: 80%;
+    margin: 40px auto 20px auto;
+    padding: 70px 20px;
+    background: linear-gradient(rgba(155, 126, 189, 0.6), rgba(155, 126, 189, 0.6)),
+                url('https://images.unsplash.com/photo-1603006905003-be475563bc59') center/cover;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 25px rgba(155, 126, 189, 0.2);
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    padding: 18px 0;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(155, 126, 189, 0.1);
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #7b5ea7;
+    margin: 0 25px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #b497d6;
+}
+
+/* Main Section */
+.main {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(155, 126, 189, 0.08);
+    text-align: center;
+}
+
+.main h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #7b5ea7;
+}
+
+.main p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #6a5c7d;
+}
+
+/* Footer */
+.footer {
+    width: 80%;
+    margin: 0 auto 40px auto;
+    padding: 30px 20px;
+    background-color: #7b5ea7;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+}

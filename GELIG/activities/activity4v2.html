@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 4</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a0dad, #9b59b6);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        form {
+            width: 500px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        label {
+            font-weight: bold;
+            color: #4b0082;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border: 1px solid #6a0dad;
+            box-shadow: 0 0 5px #9b59b6;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button[type="submit"] {
+            background-color: #6a0dad;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #4b0082;
+        }
+
+        button[type="reset"] {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>User Information Form</h2>
+
+<form action="" method="post">
+    <table>
+
+        <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="firstname" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lastname" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" name="age" required></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox" id="reading" name="hobby[]" value="reading">
+                <label for="reading">Reading</label><br>
+
+                <input type="checkbox" id="traveling" name="hobby[]" value="traveling">
+                <label for="traveling">Traveling</label><br>
+
+                <input type="checkbox" id="cooking" name="hobby[]" value="cooking">
+                <label for="cooking">Cooking</label><br>
+
+                <input type="checkbox" id="gaming" name="hobby[]" value="gaming">
+                <label for="gaming">Gaming</label><br>
+
+                <input type="checkbox" id="sports" name="hobby[]" value="sports">
+                <label for="sports">Sports</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="year-level">Year Level:</label></td>
+            <td>
+                <select id="year-level" name="year-level">
+                    <option value="1st-year">1st Year</option>
+                    <option value="2nd-year">2nd Year</option>
+                    <option value="3rd-year">3rd Year</option>
+                    <option value="4th-year">4th Year</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
